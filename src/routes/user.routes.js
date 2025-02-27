@@ -16,6 +16,8 @@ router.get("/user-dashboard", verifyAccessToken, async (req, res) => {
       return res.status(404).json({ message: "User not found" });
     }
 
+    console.log(user);
+
     res.json({ 
       message: "Welcome to your dashboard!", 
       userId: user.id, // Use "id" instead of "userId"
