@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
 const { sequelize } = require("./src/models"); // Import Sequelize instance
-const sequelize = require("./src/db"); // Correct import for Sequelize
 
 
 // Import routes
