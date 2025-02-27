@@ -21,7 +21,7 @@ app.use(express.json());
 // In backend/server.js
 app.use(
   cors({
-      origin: "http://localhost:3000", // ✅ Allow frontend origin
+      origin: "https://wealthwise-backend-rox3.onrender.com", // ✅ Allow frontend origin
       credentials: true, // ✅ Allow cookies & authentication headers
       methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // ✅ Allow all request methods
       allowedHeaders: "Content-Type,Authorization", // ✅ Allow headers
